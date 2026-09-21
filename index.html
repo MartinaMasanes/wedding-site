@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facu &amp; Yesi — Subí tus fotos</title>
+<meta name="description" content="Compartí las fotos que sacaste en el casamiento de Facu y Yesi.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ SUBÍ TUS FOTOS ============ -->
+<main id="fotos" class="section upload upload--standalone">
+  <div class="section__inner">
+    <p class="eyebrow">Ayudanos a completar el álbum</p>
+    <h1 class="section-title">Subi tus fotos</h1>
+    <p class="intro">Sacaste una foto linda durante la fiesta?<br>Compartila acá, nos encantaría verla.</p>
+
+    <form class="upload-form" id="upload-form">
+      <div class="field">
+        <div class="file-picker">
+          <label for="photos" class="button button--ghost">Elegir fotos</label>
+          <span class="file-picker__status" id="file-status">Ningún archivo seleccionado</span>
+        </div>
+        <input type="file" id="photos" name="photos" accept="image/*" multiple class="visually-hidden">
+      </div>
+      <div class="upload-preview" id="upload-preview"></div>
+      <button type="submit" class="button" id="upload-submit">Enviar fotos</button>
+      <p class="upload-status" id="upload-status"></p>
+    </form>
+  </div>
+
+  <footer class="footer footer--inline">
+    <p class="footer__names">Facu ∞ Yesi</p>
+    <p>Gracias por acompañarnos</p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
